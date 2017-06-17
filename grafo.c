@@ -187,16 +187,9 @@ Grafo* kruskal(Grafo* grafo){
 	int v, temp;
 	for(i = 0; i < num_arestas && num_arestas_atuais < max_arestas; i++){
 		arco = &arestas[i];
-
-		/* Corrigindo caso v seja maior que w. */
-		if(arco->v > arco->w){
-			temp = arco->v;
-			arco->v = arco->w;
-			arco->w = temp;
-		}
 		
 		/* Os arcos são inseridos mas apenas w possui relevância. */
-		if(aberto[arco->v] || aberto[arco->w]){
+		if(aberto[arco->w]){
 			v = arco->v;
 			if(listas[v] == NULL)
 				listas[v] = list_create();

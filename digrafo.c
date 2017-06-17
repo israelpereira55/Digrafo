@@ -351,7 +351,7 @@ Grafo* kruskal(Grafo* grafo){
 		arco = &arestas[i];
 		
 		/* Os arcos são inseridos mas apenas w possui relevância. */
-		if(aberto[arco->v] || aberto[arco->w]){
+		if(aberto[arco->w]){
 			v = arco->v;
 			if(listas[v] == NULL)
 				listas[v] = list_create();
