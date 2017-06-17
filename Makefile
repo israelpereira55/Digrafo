@@ -1,18 +1,14 @@
-# Makefile: Implementação da metaheurística Evolução Diferencial para resolução do problema de roteamento.
-# Aluno: Israel Pereira de Souza.
-# Professora: Maria Cristina Rangel.
-# UFES 2016
-
+# Makefile
 
 # Variaveis
 
 nome_programa = ladders
-
 main = ladders
 
-dependencia1 = digrafo_lista
+dependencia1 = grafo
 dependencia2 = doublelinkedlist
 dependencia3 = HashSet
+
 
 #Compilação
 
